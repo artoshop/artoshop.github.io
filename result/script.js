@@ -3,12 +3,14 @@ var data1 = {
   
   datasets: [{
     label: "Total Point",
-    backgroundColor: "rgba(255,99,132,0.2)",
+    backgroundColor: ["#f20c14", "#0080ff", "#09eda0", "#f5b507"],
     borderColor: "rgba(255,99,132,1)",
-    borderWidth: 2,
-    hoverBackgroundColor: "rgba(255,99,132,0.4)",
-    hoverBorderColor: "rgba(255,99,132,1)",
+    borderWidth: 1,
+    barThickness: 1,
     data: [136, 168, 156, 176],
+    borderWidth: 1,
+    borderRadius: 3,
+
   }]
 };
 
@@ -18,14 +20,18 @@ var options1 = {
   scales: {
     yAxes: [{
       stacked: true,
+      barThickness: 1,
+      maxBarThickness: 1,
       gridLines: {
         display: true,
         color: "rgba(255,99,132,0.2)"
       }
     }],
     xAxes: [{
+      barThickness: 60,
+      maxBarThickness: 1000,
       gridLines: {
-        display: false
+        display: false,
       }
     }]
   }
