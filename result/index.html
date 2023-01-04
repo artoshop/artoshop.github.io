@@ -18,6 +18,7 @@
 	  <!-- Propeller CSS -->  
 	  <link rel="stylesheet" href="css/propeller.min.css">
 	  <script src="https://kit.fontawesome.com/aeac9eda1b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
 	  
     <title>Artoshop Result</title>
   </head>
@@ -31,20 +32,15 @@
 
   <nav class="s-sidebar__nav">
      <ul>
-      <img src="https://artoshop.github.io/images/logo.png" style="width:100px; height: 100px; margin-left: 50px;">
+      <a href="https://artoshop.github.io"><img src="https://artoshop.github.io/images/logo.png" style="width:100px; height: 100px; margin-left: 50px;"></a>
         <li>
            <a class="s-sidebar__nav-link" href="#0" style="color: white; margin-top: 20px;">
-              <i class="fa fa-home"></i><em>Home</em>
+              <i class="fa-solid fa-square-poll-vertical"></i><em>Dashboard</em>
            </a>
         </li>
         <li>
            <a class="s-sidebar__nav-link" href="#0" style="color: white;">
-             <i class="fa fa-user"></i><em>My Profile</em>
-           </a>
-        </li>
-        <li>
-           <a class="s-sidebar__nav-link" href="#0" style="color: white;">
-              <i class="fa fa-camera"></i><em>Camera</em>
+             <i class="fa-solid fa-gauge"></i><em>Results</em>
            </a>
         </li>
      </ul>
@@ -53,10 +49,12 @@
 
 <!-- Content -->
 <main class="s-layout__content">
+  <div class="main_gra">
    <div class="chart-container-1" style="padding-right: 50px; width: 700px;">
-    <h1 style="text-align: center;">Artoshop Graphical Result</h1>
+    <h1 style="text-align: center; font-family: 'Gotham', sans-serif;">Artoshop Graphical Result</h1>
       <canvas id="chart-1"></canvas>
   </div>
+</div>
 
   <script>
     
