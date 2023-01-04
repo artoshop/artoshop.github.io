@@ -4,7 +4,7 @@ var data1 = {
   datasets: [{
     label: "Total Point",
     backgroundColor: ["#f20c14", "#0080ff", "#09eda0", "#f5b507"],
-    borderColor: "rgba(255,99,132,1)",
+    borderColor: "",
     borderWidth: 1,
     barThickness: 1,
     data: [136, 168, 156, 176],
