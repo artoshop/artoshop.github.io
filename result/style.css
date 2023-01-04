@@ -169,27 +169,20 @@ body {
 }
 
 canvas {
-  border: 1px dotted red;
+  outline: solid 1px black;
   padding: 6px;
+  width: 400px;
 }
 
 .chart-container-1 {
   height: 500px;
   flex: 0 0 auto;
-  width: 90%;
+  width: 10%;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-.chart-container-2 {
-  height: 150px;
-  flex: 0 0 auto;
-  width: 40%;
-}
 
-.chart-container-3 {
-  height: 150px;
-  flex: 0 0 auto;
-  width: 25%;
-}
 
 .main-container {
   display: flex;
@@ -198,4 +191,9 @@ canvas {
 
 .main-container > div {
     padding: 0px 10px;
+}
+.main_gra{
+  height: 300px
+  width: 400px;
+
 }
