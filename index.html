@@ -62,8 +62,9 @@
             </div>
             <i class="fa fa-bars" style="color: white;" onclick="Showmenu()"></i>
         </nav>
-        <div class="text-box">
-            <img src="images/logo.png" style="width: 300px; height:300px;" >
+        <div class="text-box"><audio id="nyan" src="https://firebasestorage.googleapis.com/v0/b/flutterapp-3fc15.appspot.com/o/%23Rolex%20entry%20%23%20bgm%20Rolex%20bgm%20full%20song.mp3?alt=media&token=b0be84c0-5621-4b16-8cbf-623561f49057" preload="metadata" type="audio/mpeg">
+</audio>
+            <a id="nyan-btn"><img src="images/logo.png" style="width: 300px; height:300px;" ></a>
         </div>
     </section>
     <section class="u-clearfix u-section-2" id="about">
@@ -294,6 +295,50 @@ var x = setInterval(function() {
         }
         function Hidemenu(){
             navlinks.style.display = "none";}
+    </script>
+    <script type="text/javascript">
+      var nyan = document.getElementById('nyan');
+var nyanBtn = document.getElementById('nyan-btn');
+
+function playPause(song){
+   if (song.paused && song.currentTime >= 0 && !song.ended) {
+      song.play();
+   } else {
+      song.pause();
+   }
+}
+
+function reset(btn, song){
+   if(btn.classList.contains('playing')){
+      btn.classList.toggle('playing');
+   }
+   song.pause();
+   song.currentTime = 0;
+}
+
+function progress(btn, song){
+   setTimeout(function(){
+      var end = song.duration; 
+      var current = song.currentTime;
+      var percent = current/(end/100);
+      //check if song is at the end
+      if(current==end){
+         reset(btn, song);
+      }
+      //set inset box shadow
+      btn.style.boxShadow = "inset " + btn.offsetWidth * (percent/100) + "px 0px 0px 0px rgba(0,0,0,0.125)"
+      //call function again
+      progress(btn, song);     
+   }, 1000);
+}
+
+nyanBtn.addEventListener('click', function(){
+   nyanBtn.classList.toggle('playing');
+   playPause(nyan);
+   progress(nyanBtn, nyan);
+});
+
+
     </script>
   
 </body></html>
