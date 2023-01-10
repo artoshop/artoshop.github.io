@@ -77,7 +77,7 @@ var data3 = {
   
   datasets: [{
     label: "Total Point",
-    backgroundColor: ["#f20c14", "#0080ff", "#09eda0", "#f5b507"],
+    backgroundColor: "#0080ff",
     borderColor: "rgba(255,99,132,1)",
     borderWidth: 1,
     barThickness: 1,
