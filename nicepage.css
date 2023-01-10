@@ -37,14 +37,14 @@ body::-webkit-scrollbar {
   /* (D1) FROM */
   from {
     box-shadow:
-    0 0 5px #e6f029,0 0 10px #e6f029,
-    0 0 20px #e6f029, 0 0 40px #e6f029;
+    0 0 5px #fff,0 0 10px #fff,
+    0 0 20px #fff, 0 0 40px #fff;
   }
   /* (D2) TO */
   to {
     box-shadow:
-    0 0 5px #e0e66e, 0 0 10px #e0e66e,
-    0 0 20px #e0e66e, 0 0 40px #e0e66e;
+    0 0 5px #ffe600, 0 0 10px #ffe600,
+    0 0 20px #ffe600, 0 0 40px #ffe600;
   }
 }
 
@@ -52,8 +52,8 @@ body::-webkit-scrollbar {
   /* (D1) FROM */
   from {
     box-shadow:
-    0 0 5px #0088ff,0 0 10px #0088ff,
-    0 0 20px #0088ff, 0 0 40px #0088ff;
+    0 0 5px #fff,0 0 10px #fff,
+    0 0 20px #fff, 0 0 40px #fff;
   }
   /* (D2) TO */
   to {
@@ -66,8 +66,8 @@ body::-webkit-scrollbar {
   /* (D1) FROM */
   from {
     box-shadow:
-    0 0 5px #ff002b,0 0 10px #ff002b,
-    0 0 20px #ff002b, 0 0 40px #ff002b;
+    0 0 5px #fff,0 0 10px #fff,
+    0 0 20px #fff, 0 0 40px #fff;
   }
   /* (D2) TO */
   to {
@@ -80,8 +80,8 @@ body::-webkit-scrollbar {
   /* (D1) FROM */
   from {
     box-shadow:
-    0 0 5px #00ffa8,0 0 10px #00ffa8,
-    0 0 20px #00ffa8, 0 0 40px #00ffa8;
+    0 0 5px #fff,0 0 10px #fff,
+    0 0 20px #fff, 0 0 40px #fff;
   }
   /* (D2) TO */
   to {
@@ -102,6 +102,15 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   height: 40px;
   width: 100%;
+  background-color: #5ba2d8;
+}
+.feci1 .sufaid{
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 80px;
+  width: 90%;
   background-color: #5ba2d8;
 }
 .feci h1{
@@ -130,7 +139,7 @@ body::-webkit-scrollbar {
 }
 .feci .feci-col img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 1s;
 }
 .feci .feci-col:hover{
