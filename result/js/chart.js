@@ -7,7 +7,7 @@ var data1 = {
     borderColor: "rgba(255,99,132,1)",
     borderWidth: 1,
     barThickness: 1,
-    data: [853, 843, 855, 857],
+    data: [1047, 1288, 1234, 1254],
     borderWidth: 1,
     borderRadius: 3,
 
@@ -81,7 +81,7 @@ var data3 = {
     borderColor: "rgba(255,99,132,1)",
     borderWidth: 1,
     barThickness: 1,
-    data: [41.32, 158.7, 77.09, 122.9, 95.38, 104.6, 67.4, 101.4, 131.2],
+    data: [44.39, 155.6, 75.11, 124.0, 85.44, 114.6, 76.52, 107.2, 116.2],
     borderWidth: 1,
     borderRadius: 3,
 
